@@ -1,0 +1,9 @@
+This repository is based on the Arduino source code found here:
+http://arduino.cc
+
+The purpose of this module is to expose Arduino functionality to environments not using the IDE tool, which is
+not suited for complex projects. The output of a make in this module is a static library that can be linked into
+the final elf/hex binary for the AVR HW. 
+
+It is assumed that the avr gcc toolchain has been installed in the system. At the moment the target HW is hardcoded 
+for the atmega1280, but it is possible to change this in the makefile.

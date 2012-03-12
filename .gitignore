@@ -1,0 +1,7 @@
+autogen_libarduino_build_info.h
+*.o
+*.a
+*~
+*.swp
+*.elf
+*.hex
