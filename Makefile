@@ -14,6 +14,9 @@ lib:
 blink: outdir
 	$(MAKE) --directory='src/blink'
 
+indicator: outdir
+	$(MAKE) --directory='src/indicator'
+
 upload:
 	avrdude $(AVRDUDE_VERBOSITY) -C avrdude.conf -q -q $(AVRDUDE_HW_CFG) -D -Uflash:w:$(OUTDIR)/$(HEX).hex:i
 
